@@ -4,13 +4,14 @@ import {
   ExibeContato,
   BotaoEditar,
   CentralButao,
-  BotaoRemover
+  BotaoRemover,
+  Subtitulo
 } from './styles'
 
 const ListaDeConstatos = () => {
   return (
-    <div>
-      <h2>Familia</h2>
+    <main>
+      <Subtitulo>Familia</Subtitulo>
       <ListaContainer>
         <Formulario>
           <ExibeContato>Nome:Jose</ExibeContato>
@@ -22,7 +23,7 @@ const ListaDeConstatos = () => {
           <BotaoEditar type="button">Editar</BotaoEditar>
         </CentralButao>
       </ListaContainer>
-    </div>
+    </main>
   )
 }
 

@@ -1,14 +1,18 @@
-import EstiloGlobal from './styles/styles'
+import EstiloGlobal, { Container } from './styles/styles'
 
 import CabecalhoLista from './components/Cabecalho'
 import ListaDeConstatos from './components/ListaContatos'
+import BarraLateral from './components/BarraLateral'
 
 function App() {
   return (
     <>
       <EstiloGlobal />
-      <CabecalhoLista />
-      <ListaDeConstatos />
+      <Container>
+        <CabecalhoLista />
+        <BarraLateral />
+        <ListaDeConstatos />
+      </Container>
     </>
   )
 }

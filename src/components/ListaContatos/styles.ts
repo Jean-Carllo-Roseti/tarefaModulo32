@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+export const Subtitulo = styled.h2`
+  text-align: center;
+`
+
 export const ListaContainer = styled.div`
   width: 700px;
   max-width: 100%;
@@ -8,10 +12,6 @@ export const ListaContainer = styled.div`
   justify-content: space-between;
   background-color: #6a89cc;
   border-radius: 8px;
-
-  h2 {
-    text-align: center;
-  }
 `
 export const Formulario = styled.form`
   border-radius: 8px;
