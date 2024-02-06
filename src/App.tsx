@@ -1,7 +1,7 @@
 import EstiloGlobal, { Container } from './styles/styles'
 
-import BarraLateral from './components/BarraLateral'
-import ConteudoPrincpal from './components/ConteudoPrincipal'
+import BarraLateral from './containers/BarraLateral'
+import ConteudoPrincpal from './containers/ConteudoPrincipal'
 
 function App() {
   return (
