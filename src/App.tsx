@@ -1,4 +1,4 @@
-import ListaDeContato from './components/Lista-de-contatos'
+import ListaDeContato from './components/Cabecalho'
 import EstiloGlobal from './styles/styles'
 
 function App() {

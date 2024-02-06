@@ -1,6 +1,6 @@
 import { Titulo, BotaoADC, Cabecalho, Lista, Campo } from './styles'
 
-const ListaDeContato = () => {
+const CabecalhoLista = () => {
   return (
     <Cabecalho>
       <Titulo>Contatos</Titulo>
@@ -22,4 +22,4 @@ const ListaDeContato = () => {
   )
 }
 
-export default ListaDeContato
+export default CabecalhoLista
