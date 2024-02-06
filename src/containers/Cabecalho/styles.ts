@@ -6,13 +6,12 @@ export const Lista = styled.ul`
   gap: 32px;
 `
 export const Titulo = styled.h1`
-  color: #fff;
+  color: #000;
   font-weight: bold;
-  padding-bottom: 8px;
+  padding: 16px 0;
 `
 
 export const Cabecalho = styled.header`
-  background-color: blue;
   text-align: center;
   margin-bottom: 32px;
   padding: 16px;
@@ -28,8 +27,9 @@ export const BotaoADC = styled.button`
 `
 
 export const Campo = styled.input`
-  text-align: center;
-  border-radius: 8px;
-  padding: 8px;
+  background-color: #ffeaa7;
   border: none;
+  border-radius: 8px;
+  text-align: center;
+  padding: 8px;
 `
