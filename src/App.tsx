@@ -1,11 +1,14 @@
-import ListaDeContato from './components/Cabecalho'
 import EstiloGlobal from './styles/styles'
+
+import CabecalhoLista from './components/Cabecalho'
+import ListaDeConstatos from './components/ListaContatos'
 
 function App() {
   return (
     <>
       <EstiloGlobal />
-      <ListaDeContato />
+      <CabecalhoLista />
+      <ListaDeConstatos />
     </>
   )
 }
