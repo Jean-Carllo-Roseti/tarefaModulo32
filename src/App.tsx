@@ -1,8 +1,12 @@
+import ListaDeContato from './components/Lista-de-contatos'
+import EstiloGlobal from './styles/styles'
+
 function App() {
   return (
-    <div className="App">
-      <h1>Ola</h1>
-    </div>
+    <>
+      <EstiloGlobal />
+      <ListaDeContato />
+    </>
   )
 }
 
