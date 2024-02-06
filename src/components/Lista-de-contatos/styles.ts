@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const Lista = styled.ul`
   display: flex;
-  justify-content: space-between;
-  gap: 7%;
+  justify-content: center;
+  gap: 32px;
 `
 export const Titulo = styled.h1`
   color: #fff;
@@ -25,11 +25,6 @@ export const BotaoADC = styled.button`
   color: #fff;
   cursor: pointer;
   padding: 8px;
-`
-
-export const HeaderContainer = styled.div`
-  display: flex;
-  justify-content: space-evenly;
 `
 
 export const Campo = styled.input`
