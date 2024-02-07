@@ -5,7 +5,7 @@ const BarraLateral = () => {
   return (
     <aside>
       <S.ConteinerLateral>
-        <S.Pesquisar type="text" placeholder="Pesquisar" />
+        <S.Pesquisar type="text" placeholder="Pesquisar contato" />
         <S.ConteinerCards>
           <CardContato ativo />
           <CardContato />

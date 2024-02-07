@@ -13,8 +13,8 @@ export const Titulo = styled.h1`
 
 export const Cabecalho = styled.header`
   text-align: center;
-  margin-bottom: 32px;
   padding: 16px;
+  background-color: #6ab04c;
 `
 
 export const BotaoADC = styled.button`

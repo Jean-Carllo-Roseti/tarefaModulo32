@@ -1,27 +1,14 @@
 import styled from 'styled-components'
 
-export const Subtitulo = styled.h2`
-  width: 700px;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 8px;
-  margin-bottom: 8px;
+export const Conteudo = styled.div`
+  display: flex;
+  align-items: center; // Centraliza verticalmente se necessário
 `
 
-export const ListaContainer = styled.div`
-  width: 550px;
-  max-width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  background-color: #6a89cc;
-  border-radius: 16px;
-  margin-bottom: 16px;
-  box-shadow: 0 16px 4px 0 rgba(0, 0, 0, 0.8);
-`
 export const Formulario = styled.form`
   padding: 16px 0;
   width: 500px;
+  flex: 1; /* Ocupa o espaço disponível, mas não tudo se CentralButao precisar de espaço */
 `
 
 export const ExibeContato = styled.label`
@@ -30,12 +17,12 @@ export const ExibeContato = styled.label`
 `
 
 export const CentralButao = styled.div`
-  margin: auto;
+  display: flex;
+  flex-direction: column; /* Alinha os botões verticalmente */
+  justify-content: center; /* Centraliza os botões verticalmente */
+  padding: 0 auto;
 `
-export const Main = styled.div`
-  overflow-y: scroll;
-  height: 81vh;
-`
+
 export const Botao = styled.button`
   display: block;
   width: 70px;
@@ -51,14 +38,17 @@ export const BotaoRemover = styled(Botao)`
   color: #000;
   margin-bottom: 16px;
 `
+
 export const BotaoEditar = styled(Botao)`
   background-color: #bdc3c7;
   color: #000;
 `
+
 export const BotaoSalvar = styled(Botao)`
   background-color: green;
   color: #fff;
 `
+
 export const BotaoCancelar = styled(Botao)`
   background-color: red;
   color: #fff;

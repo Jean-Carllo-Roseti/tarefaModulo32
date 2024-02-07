@@ -1,54 +1,26 @@
 import * as S from './styles'
+import FormContato from '../../components/Contatos'
+
+const contato = [
+  {
+    nome: 'Jose da silva salro',
+    email: 'dinossauro@gmail.com',
+    numero: '(00) 22555-3265'
+  }
+]
 
 const ListaDeConstatos = () => {
   return (
-    <main>
+    <S.Main>
       <S.Subtitulo>Familia</S.Subtitulo>
       <S.ListaContainer>
-        <S.Formulario>
-          <S.ExibeContato>Nome:Jose</S.ExibeContato>
-          <S.ExibeContato>Numero: (13) 99116-6494</S.ExibeContato>
-          <S.ExibeContato>E-mail: jose_moura@gmail.com</S.ExibeContato>
-        </S.Formulario>
-        <S.CentralButao>
-          <S.BotaoRemover type="button">Remover</S.BotaoRemover>
-          <S.BotaoEditar type="button">Editar</S.BotaoEditar>
-        </S.CentralButao>
+        {contato.map((c) => (
+          <S.Formulario key={c.nome}>
+            <FormContato nome={c.nome} email={c.email} numero={c.numero} />
+          </S.Formulario>
+        ))}
       </S.ListaContainer>
-      <S.ListaContainer>
-        <S.Formulario>
-          <S.ExibeContato>Nome:Jose</S.ExibeContato>
-          <S.ExibeContato>Numero: (13) 99116-6494</S.ExibeContato>
-          <S.ExibeContato>E-mail: jose_moura@gmail.com</S.ExibeContato>
-        </S.Formulario>
-        <S.CentralButao>
-          <S.BotaoRemover type="button">Remover</S.BotaoRemover>
-          <S.BotaoEditar type="button">Editar</S.BotaoEditar>
-        </S.CentralButao>
-      </S.ListaContainer>
-      <S.ListaContainer>
-        <S.Formulario>
-          <S.ExibeContato>Nome:Jose</S.ExibeContato>
-          <S.ExibeContato>Numero: (13) 99116-6494</S.ExibeContato>
-          <S.ExibeContato>E-mail: jose_moura@gmail.com</S.ExibeContato>
-        </S.Formulario>
-        <S.CentralButao>
-          <S.BotaoRemover type="button">Remover</S.BotaoRemover>
-          <S.BotaoEditar type="button">Editar</S.BotaoEditar>
-        </S.CentralButao>
-      </S.ListaContainer>
-      <S.ListaContainer>
-        <S.Formulario>
-          <S.ExibeContato>Nome:Jose</S.ExibeContato>
-          <S.ExibeContato>Numero: (13) 99116-6494</S.ExibeContato>
-          <S.ExibeContato>E-mail: jose_moura@gmail.com</S.ExibeContato>
-        </S.Formulario>
-        <S.CentralButao>
-          <S.BotaoRemover type="button">Remover</S.BotaoRemover>
-          <S.BotaoEditar type="button">Editar</S.BotaoEditar>
-        </S.CentralButao>
-      </S.ListaContainer>
-    </main>
+    </S.Main>
   )
 }
 
