@@ -2,25 +2,25 @@ import styled from 'styled-components'
 
 export const Conteudo = styled.div`
   display: flex;
-  align-items: center; // Centraliza verticalmente se necessário
+  justify-content: center; /* utlizar mais desta propriedades*/
+  margin-bottom: 16px;
 `
 
-export const Formulario = styled.form`
-  padding: 16px 0;
-  width: 500px;
-  flex: 1; /* Ocupa o espaço disponível, mas não tudo se CentralButao precisar de espaço */
+export const Colunas = styled.div`
+  display: flex;
+  background-color: #000;
+  padding: 10px;
 `
 
-export const ExibeContato = styled.label`
+export const Lista = styled.ul`
+  background-color: blue;
+  width: 550px;
+  margin-right: 20px;
+`
+
+export const LItem = styled.li`
   display: block;
   margin-left: 50px;
-`
-
-export const CentralButao = styled.div`
-  display: flex;
-  flex-direction: column; /* Alinha os botões verticalmente */
-  justify-content: center; /* Centraliza os botões verticalmente */
-  padding: 0 auto;
 `
 
 export const Botao = styled.button`

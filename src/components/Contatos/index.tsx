@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import * as S from './style' // Garanta que o caminho para o arquivo de estilo está correto
+import * as S from './style'
 
 export type Props = {
   nome: string
@@ -12,35 +12,41 @@ const FormContato = ({ nome, email, numero }: Props) => {
 
   return (
     <S.Conteudo>
-      {' '}
-      {/* Adicionado um novo styled-component para agir como contêiner flex */}
-      <S.Formulario>
-        <S.ExibeContato>{nome}</S.ExibeContato>
-        <S.ExibeContato>{email}</S.ExibeContato>
-        <S.ExibeContato>{numero}</S.ExibeContato>
-      </S.Formulario>
-      <S.CentralButao>
-        {estaEditando ? (
-          <>
-            <S.BotaoCancelar
-              type="button"
-              onClick={() => setEstaEditando(false)}
-            >
-              Cancelar
-            </S.BotaoCancelar>
-            <S.BotaoSalvar type="button" onClick={() => setEstaEditando(false)}>
-              Salvar
-            </S.BotaoSalvar>
-          </>
-        ) : (
-          <>
-            <S.BotaoRemover type="button">Remover</S.BotaoRemover>
-            <S.BotaoEditar type="button" onClick={() => setEstaEditando(true)}>
-              Editar
-            </S.BotaoEditar>
-          </>
-        )}
-      </S.CentralButao>
+      <S.Colunas>
+        <S.Lista>
+          <S.LItem>{nome}</S.LItem>
+          <S.LItem>{email}</S.LItem>
+          <S.LItem>{numero}</S.LItem>
+        </S.Lista>
+        <div>
+          {estaEditando ? (
+            <>
+              <S.BotaoCancelar
+                type="button"
+                onClick={() => setEstaEditando(false)}
+              >
+                Cancelar
+              </S.BotaoCancelar>
+              <S.BotaoSalvar
+                type="button"
+                onClick={() => setEstaEditando(false)}
+              >
+                Salvar
+              </S.BotaoSalvar>
+            </>
+          ) : (
+            <>
+              <S.BotaoRemover type="button">Remover</S.BotaoRemover>
+              <S.BotaoEditar
+                type="button"
+                onClick={() => setEstaEditando(true)}
+              >
+                Editar
+              </S.BotaoEditar>
+            </>
+          )}
+        </div>
+      </S.Colunas>
     </S.Conteudo>
   )
 }

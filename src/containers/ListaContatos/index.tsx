@@ -1,25 +1,23 @@
 import * as S from './styles'
+import { useSelector } from 'react-redux'
+
 import FormContato from '../../components/Contatos'
 
-const contato = [
-  {
-    nome: 'Jose da silva salro',
-    email: 'dinossauro@gmail.com',
-    numero: '(00) 22555-3265'
-  }
-]
+import { RootReducer } from '../../store'
 
 const ListaDeConstatos = () => {
+  const { contato } = useSelector((state: RootReducer) => state)
+
   return (
     <S.Main>
       <S.Subtitulo>Familia</S.Subtitulo>
-      <S.ListaContainer>
+      <ul>
         {contato.map((c) => (
-          <S.Formulario key={c.nome}>
+          <li key={c.nome}>
             <FormContato nome={c.nome} email={c.email} numero={c.numero} />
-          </S.Formulario>
+          </li>
         ))}
-      </S.ListaContainer>
+      </ul>
     </S.Main>
   )
 }
