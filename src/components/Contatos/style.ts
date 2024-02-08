@@ -31,26 +31,43 @@ export const Botao = styled.button`
   border: none;
   padding: 4px;
   color: #fff;
+  cursor: pointer;
 `
 
 export const BotaoRemover = styled(Botao)`
   background-color: red;
   color: #000;
   margin-bottom: 16px;
+
+  &:hover {
+    background-color: #b30000;
+  }
 `
 
 export const BotaoEditar = styled(Botao)`
   background-color: #bdc3c7;
   color: #000;
+
+  &:hover {
+    background-color: #b30000;
+  }
 `
 
 export const BotaoSalvar = styled(Botao)`
   background-color: green;
   color: #fff;
+
+  &:hover {
+    background-color: #b30000;
+  }
 `
 
 export const BotaoCancelar = styled(Botao)`
   background-color: red;
   color: #fff;
   margin-bottom: 16px;
+
+  &:hover {
+    background-color: #b30000;
+  }
 `
