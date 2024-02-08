@@ -7,10 +7,11 @@ import { RootReducer } from '../../store'
 
 const ListaDeConstatos = () => {
   const { itens } = useSelector((state: RootReducer) => state.contato)
+  const { termo } = useSelector((state: RootReducer) => state.filtro)
 
   return (
     <S.Main>
-      <S.Subtitulo>Familia</S.Subtitulo>
+      <S.Subtitulo>Familia teste pesquisa: &quot;{termo}&quot;</S.Subtitulo>
       <ul>
         {itens.map((c) => (
           <li key={c.nome}>
