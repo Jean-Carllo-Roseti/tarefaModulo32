@@ -29,7 +29,6 @@ const FormContato = ({
       setNome(nomeSalvo)
     }
     if (emailSalvo.length > 0) {
-      // Corrigido o erro de sintaxe aqui
       setEmail(emailSalvo)
     }
   }, [numeroSalvo, nomeSalvo, emailSalvo])

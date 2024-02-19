@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
-import { Props } from '.'
+type Props = {
+  ativo?: boolean
+}
 
 export const Card = styled.div<Props>`
   padding: 8px;
