@@ -15,6 +15,7 @@ export const Cabecalho = styled.header`
   text-align: center;
   padding: 16px;
   background-color: #6ab04c;
+  margin-bottom: 16px;
 `
 
 export const BotaoADC = styled.button`
@@ -32,4 +33,7 @@ export const Campo = styled.input`
   border-radius: 8px;
   text-align: center;
   padding: 8px;
+`
+export const Form = styled.form`
+  background-color: #fff;
 `
